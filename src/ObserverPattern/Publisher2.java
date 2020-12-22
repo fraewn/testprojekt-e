@@ -1,7 +1,9 @@
+package ObserverPattern;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Publisher {
+public abstract class Publisher2 {
     private List<Subscriber> subscribers = new ArrayList<Subscriber>();
     public void subscribe (Subscriber s){
         subscribers.add(s);

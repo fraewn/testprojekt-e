@@ -1,4 +1,6 @@
-public class ConcretePublisher2 extends Publisher {
+package ObserverPattern;
+
+public class ConcretePublisher extends Publisher {
     private Object state;
     public Object getState (){
         return state;

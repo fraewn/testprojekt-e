@@ -1,3 +1,5 @@
+package ObserverPattern;
+
 public class ConcreteSubscriber2 implements Subscriber {
     @Override
     public void update() {
