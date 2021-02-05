@@ -15,5 +15,4 @@ public class StrategyClient {
 		context.setStrategy(strategy2);
 		context.useStrategy();
 	}
-
 }
