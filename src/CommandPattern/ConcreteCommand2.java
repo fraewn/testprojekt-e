@@ -1,7 +1,10 @@
 package CommandPattern;
 
 public class ConcreteCommand2 implements CommandInterface {
-	CommandReceiver receiver = new CommandReceiver();
+	private CommandReceiver receiver;
+	public ConcreteCommand2(CommandReceiver receiver){
+		this.receiver = receiver;
+	}
 
 	@Override
 	public void execute() {

@@ -2,11 +2,19 @@ package CommandPattern;
 
 public class CommandClient {
 	public void executeCommandExample() {
+		CommandReceiver commandReceiver = new CommandReceiver();
 		CommandInvoker invoker = new CommandInvoker();
-		invoker.setCommand(new ConcreteCommand1());
+		CommandInterface command1 = new ConcreteCommand1(commandReceiver);
+		invoker.setCommand(command1);
 		invoker.useCommand();
-		invoker.setCommand(new ConcreteCommand2());
+
+		CommandInterface command2 = new ConcreteCommand2(commandReceiver);
+		invoker.setCommand(command2);
 		invoker.useCommand();
+
+
+
+
 	}
 
 }
