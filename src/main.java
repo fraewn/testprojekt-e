@@ -1,8 +1,8 @@
 import CommandPattern.CommandClient;
 import ObserverPattern.ObserverClient;
 import ProxyPattern.ProxyClient;
+import Singleton.MilkyWay;
 import StrategyPattern.StrategyClient;
-import StrategyPattern.StrategyContext;
 
 public class main {
 	public static void main(String args[]){
@@ -23,5 +23,10 @@ public class main {
 		ProxyClient proxyClient = new ProxyClient();
 		proxyClient.executeProxyExample();
 		proxyClient.executeProxyExample();
+
+		System.out.println("-------------------------------");
+		MilkyWay milkyWay = new MilkyWay();
+		milkyWay.milkyWayNews();
+		System.out.println("This was the Singleton-Test");
 	}
 }
